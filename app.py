@@ -13,7 +13,7 @@ from google.genai import types
 
 app = Flask(__name__)
 # Allow CORS for frontend (GitHub Pages + localhost for testing)
-CORS(app, resources={r"/api/*": {"origins": ["https://<your-username>.github.io", "http://localhost:3000"]}})
+CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 # --- Load environment variables ---
 load_dotenv(override=False)
@@ -121,3 +121,4 @@ def chat():
 if __name__ == "__main__":
     # Render provides $PORT automatically
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8000)), debug=True)
+
