@@ -86,7 +86,7 @@ def get_ai_response(student_message: str) -> str:
     config = types.GenerateContentConfig(
         system_instruction=system_instruction,
         temperature=0.2,
-        max_output_tokens=300,
+        max_output_tokens=500,
     )
 
     response = client.models.generate_content(
@@ -121,4 +121,3 @@ def chat():
 if __name__ == "__main__":
     # Render provides $PORT automatically
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8000)), debug=True)
-
