@@ -1,0 +1,15 @@
+
+[
+  {
+    "Context": "exam stress",
+    "Response": "It's natural to feel stressed before exams. Take regular short breaks, stay hydrated, and remind yourself that preparation takes time."
+  },
+  {
+    "Context": "homesickness",
+    "Response": "Missing home is completely normal. Try connecting with friends, joining campus activities, or scheduling calls with family."
+  },
+  {
+    "Context": "time management",
+    "Response": "Start by writing down your tasks, break them into smaller steps, and set realistic daily goals to stay on track."
+  }
+]
